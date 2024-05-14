@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NodeWidget</class>
+ <widget class="QWidget" name="NodeWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>464</width>
+    <height>99</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-color:rgb(0,0,0);
+font: 11pt &quot;Bahnschrift SemiCondensed&quot;;
+border-width:20px;
+background-color: rgb(255, 255, 255);
+border-color:rgb(0,0,0);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="1">
+    <widget class="QComboBox" name="category">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(185, 185, 185);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Красота и уход за собой</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Лекарства и здоровье</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Коммуникации и связь</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Жизнь и развлечения</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Продукты</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Доход</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Одежда, товары для дома и прочее</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QCheckBox" name="editable">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLabel" name="name">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(0,0,0);</string>
+     </property>
+     <property name="text">
+      <string>Комментарий</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QLineEdit" name="sum">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="placeholderText">
+      <string>0</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QDateEdit" name="dateEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

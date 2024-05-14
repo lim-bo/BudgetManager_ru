@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>604</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe Print</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>BudgetManager</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(197, 197, 147);
+color: rgb(0, 0, 0);</string>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QPushButton" name="statButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift SemiCondensed</family>
+        <pointsize>13</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(0,0,0);
+border-width: 30px;
+border-radius: 15px;
+background-color: rgb(194, 194, 194);
+font: 13pt &quot;Bahnschrift SemiCondensed&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Показать статистику</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <family>Bahnschrift SemiCondensed</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Записи</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(194, 194, 194);
+border-radius: 15 px;
+</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>536</width>
+         <height>599</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(194, 194, 194);</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>556</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift SemiCondensed</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Контроль расходов</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>604</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(194, 194, 194);</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="addAction"/>
+   <addaction name="deleteAction"/>
+   <addaction name="editAction"/>
+   <addaction name="outerDbAction"/>
+  </widget>
+  <action name="addAction">
+   <property name="icon">
+    <iconset resource="recources.qrc">
+     <normaloff>:/imgSrc/images/addIcon.png</normaloff>:/imgSrc/images/addIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Добавить</string>
+   </property>
+  </action>
+  <action name="deleteAction">
+   <property name="icon">
+    <iconset resource="recources.qrc">
+     <normaloff>:/imgSrc/images/deleteIcon.png</normaloff>:/imgSrc/images/deleteIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Удалить</string>
+   </property>
+  </action>
+  <action name="editAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="recources.qrc">
+     <normaloff>:/imgSrc/images/editIcon.png</normaloff>:/imgSrc/images/editIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Редактировать</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="outerDbAction">
+   <property name="icon">
+    <iconset resource="recources.qrc">
+     <normaloff>:/imgSrc/images/dbIcon.png</normaloff>:/imgSrc/images/dbIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>OuterDb</string>
+   </property>
+   <property name="toolTip">
+    <string>Внешняя БД</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="recources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

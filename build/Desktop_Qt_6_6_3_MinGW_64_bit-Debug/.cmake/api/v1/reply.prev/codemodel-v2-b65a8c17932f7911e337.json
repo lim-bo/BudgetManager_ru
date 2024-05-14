@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-73a0d95bb8b7cc80ff61.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "BudgetManager",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BudgetManager::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BudgetManager-Debug-cd9879079e9c0dc39278.json",
+					"name" : "BudgetManager",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "BudgetManager_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BudgetManager_autogen-Debug-04ef8709c55e25da057e.json",
+					"name" : "BudgetManager_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "BudgetManager_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BudgetManager_autogen_timestamp_deps-Debug-4cf370ae11244a72f792.json",
+					"name" : "BudgetManager_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/projects/cpp/Wallet/BudgetManager/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug",
+		"source" : "C:/projects/cpp/Wallet/BudgetManager"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
