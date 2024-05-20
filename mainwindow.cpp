@@ -110,8 +110,7 @@ void MainWindow::on_editAction_triggered(bool checked)
     emit validateSignal();
 }
 
-// Метод для сохранения записей в объект базы данных, вызывается
-// перед деструктором вышеуказанного объекта
+// Метод для сохранения записей в объект файловой базы данных
 void MainWindow::saveChangesToFile() {
     List<note_t> newData;
     bool ok;
@@ -154,6 +153,10 @@ void MainWindow::on_deleteAction_triggered()
 // окно AddNodeWindow
 void MainWindow::on_addAction_triggered()
 {
+    if (this->nodes.Len() >= 500) {
+        QMessageBox::critical(this, "Ошибка", "Слишком много записей");
+        return;
+    }
     AddNodeWindow* window = new AddNodeWindow(this);
     window->setAttribute(Qt::WA_DeleteOnClose);
     window->setModal(true);
@@ -254,6 +257,8 @@ void MainWindow::saveChangesToOuterDB() {
     this->outerDb->saveData(&forSave);
 }
 
+// Отображает диалог с выбором способа
+// сохранения данных
 void MainWindow::showSaveMessage(){
     if (this->outerDb->checkConnection()) {
         QMessageBox::StandardButton reply = QMessageBox::question(this, "Способ сохранения данных", "Сохранить во внешнюю бд?", QMessageBox::Yes | QMessageBox::No);
