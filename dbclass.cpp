@@ -113,7 +113,7 @@ void DataBase::init() {
     std::ifstream in(dbPath, std::ios_base::in);
     if (!in.is_open()) {
         in.close();
-        throw BadFile;
+        throw "critical error file not found";
     }
     while (in.good()) {
         if (in.eof()) {

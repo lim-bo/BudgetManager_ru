@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>464</width>
-    <height>99</height>
+    <width>486</width>
+    <height>119</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -83,6 +83,9 @@ border-color:rgb(0,0,0);</string>
        <verstretch>0</verstretch>
       </sizepolicy>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(194, 194, 194);</string>
+     </property>
      <property name="text">
       <string/>
      </property>
@@ -97,7 +100,10 @@ border-color:rgb(0,0,0);</string>
       </sizepolicy>
      </property>
      <property name="styleSheet">
-      <string notr="true">color:rgb(0,0,0);</string>
+      <string notr="true">color:rgb(0,0,0);
+border-width: 15px;
+border-color: rgb(0,0,0);
+</string>
      </property>
      <property name="text">
       <string>Комментарий</string>

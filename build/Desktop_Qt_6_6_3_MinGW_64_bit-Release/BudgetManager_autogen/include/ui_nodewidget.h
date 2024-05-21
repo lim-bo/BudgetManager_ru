@@ -35,7 +35,7 @@ public:
     {
         if (NodeWidget->objectName().isEmpty())
             NodeWidget->setObjectName("NodeWidget");
-        NodeWidget->resize(464, 99);
+        NodeWidget->resize(486, 119);
         NodeWidget->setStyleSheet(QString::fromUtf8("border-color:rgb(0,0,0);\n"
 "font: 11pt \"Bahnschrift SemiCondensed\";\n"
 "border-width:20px;\n"
@@ -70,6 +70,7 @@ public:
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(editable->sizePolicy().hasHeightForWidth());
         editable->setSizePolicy(sizePolicy1);
+        editable->setStyleSheet(QString::fromUtf8("background-color: rgb(194, 194, 194);"));
 
         gridLayout->addWidget(editable, 0, 0, 1, 1);
 
@@ -80,7 +81,10 @@ public:
         sizePolicy2.setVerticalStretch(0);
         sizePolicy2.setHeightForWidth(name->sizePolicy().hasHeightForWidth());
         name->setSizePolicy(sizePolicy2);
-        name->setStyleSheet(QString::fromUtf8("color:rgb(0,0,0);"));
+        name->setStyleSheet(QString::fromUtf8("color:rgb(0,0,0);\n"
+"border-width: 15px;\n"
+"border-color: rgb(0,0,0);\n"
+""));
 
         gridLayout->addWidget(name, 0, 1, 1, 1);
 
